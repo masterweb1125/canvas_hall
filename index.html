@@ -1,0 +1,47 @@
+<link type="text/css" rel="stylesheet" href="main.css">
+
+<div class="wrap">
+    <div>
+      <canvas id="mycanvas" ondrop="dropCard(event)" ondragover="allowDropCard(event)"></canvas>
+    </div>
+  </div>
+  <div class="wrap2">
+    <div>
+      <canvas id="mycanvas2"></canvas>
+    </div>
+</div>
+
+<div class="control">
+    <button onclick="getVirtualHallData()">Get Data</button>
+
+</div>
+<div class="control-btn">
+    <div>
+        <button onclick="setShape('round')">Round</button>
+    </div>
+    <div>
+        <button onclick="setShape('rect')">rect</button>
+    </div>
+    <div>
+        <button onclick="setShape('ecllipse')">ecllipse</button>
+    </div>
+    <div>
+        <input id="color" type="color" >
+        <button onclick="setShape('color')">set</button>
+    </div>
+    <!-- <div>
+        <button onclick="setShape('triangle')">triangle</button>
+    </div> -->
+</div>
+
+<div class="tables" id="tables-div">
+    <div id="drag1" name="B1" class="card" draggable="true" ondragstart="dragCard(event)">
+        <span>B1</span>
+    </div>
+    <div id="drag2" name="B2" class="card" draggable="true" ondragstart="dragCard(event)">
+        <span>B2</span>
+    </div>
+</div>
+
+<script src="logic.js"></script>
+<script src="main.js"></script>

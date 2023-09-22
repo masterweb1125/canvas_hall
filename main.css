@@ -1,0 +1,117 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden; */
+  
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+   
+}
+
+.wrap div {
+    box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.75);
+}
+
+.wrap2 {
+    padding: 0 5%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    top: 0;
+    left: 5%;
+    z-index: 1;
+    background-color: 'white'
+}
+
+#mycanvas {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid hsl(259, 100%, 65%)
+}
+#mycanvas2 {
+    display: block;
+    box-sizing: border-box;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+li.pass {
+    color: green
+}
+
+li.fail {
+    color: red
+}
+
+.tables {
+    width: 10%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.hand {
+    cursor:move;
+}
+
+.card {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(179, 172, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control {
+    z-index: 3;
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-btn{
+    z-index: 3;
+    height: 50%;
+    width: 10%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+}
+button{
+    padding: 10px;
+}
+
+.round {
+    border-radius: 50%;
+}
